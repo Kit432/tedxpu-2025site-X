@@ -34,3 +34,20 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Learning
+
+Next.js is a React framework that adds powerful backend features on top of React
+
+React is a frontend javascript library for building UI components
+
+React JS vs TS
+| Feature         | **React + JS**             | **React + TS**                             |
+| --------------- | -------------------------- | ------------------------------------------ |
+| Syntax          | Plain JavaScript           | JavaScript + Type Annotations              |
+| Type Checking   | None (runtime errors only) | Compile-time safety                        |
+| File Extensions | `.js`, `.jsx`              | `.ts`, `.tsx`                              |
+| Error Detection | After running              | Before running                             |
+| IDE Support     | Basic                      | Excellent                                  |
+| Learning Curve  | Easier                     | Slightly harder                            |
+| Best for        | Small/simple apps          | Medium to large apps, production codebases |
