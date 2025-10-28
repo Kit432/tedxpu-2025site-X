@@ -11,6 +11,7 @@ export default function Navigation() {
   const [openDropdown, setOpenDropdown] = useState(false);
 
   const navLinks = [
+    { href: "/", label: "Home"},
     { href: "/event", label: "Event" },
     { href: "/sponsors", label: "Sponsors" },
     { href: "/contact", label: "Contact" },
@@ -18,7 +19,6 @@ export default function Navigation() {
 
   const aboutLinks = [
     { href: "/about", label: "Overview" },
-    { href: "/about/mission", label: "Our Mission" },
     { href: "/about/team", label: "Our Team" },
     { href: "/about/history", label: "History" },
   ];
