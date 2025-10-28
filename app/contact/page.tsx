@@ -1,5 +1,3 @@
-/* About Page */
-
 export default function MissionPage() {
   return (
     <main className="min-h-screen flex items-center justify-center">
