@@ -7,6 +7,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Cursor from "@/components/ui/Cursor";
+import ParticlesBackground from "@/components/ui/ParticlesBackground";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,7 +32,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        className={`${geistSans.variable} ${geistMono.variable} antialiased absolute inset-0 z-[1]`}>
+          <ParticlesBackground />
           <Cursor />
           <Header />
         <main className="">{children}</main>

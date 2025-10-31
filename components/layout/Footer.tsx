@@ -20,22 +20,19 @@ export default function Footer() {
         {/* Social Icons */}
         <div className="flex space-x-5 text-xl">
           {/* Replace # with your actual social links */}
-          <a href="#" aria-label="Facebook" className="hover:text-red-500">
+          <a href="https://web.facebook.com/TEDxPANTEIONUNIVERSITY/?_rdc=1&_rdr#" aria-label="Facebook" className="hover:text-red-500">
             <FaFacebookF />
           </a>
-          <a href="#" aria-label="Instagram" className="hover:text-red-500">
+          <a href="https://www.instagram.com/tedxpanteionuniversity/?hl=en" aria-label="Instagram" className="hover:text-red-500">
             <FaInstagram />
           </a>
-          <a href="#" aria-label="TikTok" className="hover:text-red-500">
+          <a href="https://www.tiktok.com/@tedxpanteionuniversity" aria-label="TikTok" className="hover:text-red-500">
             <FaTiktok />
           </a>
-          <a href="#" aria-label="Spotify" className="hover:text-red-500">
+          <a href="https://open.spotify.com/show/5qEUo7uwYL829pcyCwjCsO?si=y-PD73rZSAeb3yT2jyHiwA&dl_branch=1&nd=1&dlsi=35612f59725843dd" aria-label="Spotify" className="hover:text-red-500">
             <FaSpotify />
           </a>
-          <a href="#" aria-label="Twitter" className="hover:text-red-500">
-            <FaTwitter />
-          </a>
-          <a href="#" aria-label="YouTube" className="hover:text-red-500">
+          <a href="https://www.youtube.com/@tedxpanteionuniversity3424/featured" aria-label="YouTube" className="hover:text-red-500">
             <FaYoutube />
           </a>
         </div>

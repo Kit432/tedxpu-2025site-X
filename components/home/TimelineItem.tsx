@@ -6,7 +6,6 @@ type Event = {
   id: string;
   year: string;
   title: string;
-  link?: string;
   highlight?: boolean; // for 2025 card style in screenshot
 };
 
@@ -35,13 +34,6 @@ export default function TimelineItem({
           <h3 className="mt-2 text-2xl md:text-3xl font-extrabold tracking-tight text-white">
             {event.title}
           </h3>
-          {event.link && (
-            <p className="mt-4">
-              <Link href={event.link} className="text-sm text-gray-300 underline">
-                Visit Site
-              </Link>
-            </p>
-          )}
         </div>
       </div>
     </motion.article>

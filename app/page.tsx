@@ -4,19 +4,18 @@ import HeroSection from "@/components/home/HeroSection";
 import Marquee from "@/components/home/Marquee";
 import Timeline from "@/components/home/Timeline";
 //import Animation from "@/components/home/Animation";
+import ParticlesBackground from "@/components/ui/ParticlesBackground";
 
 export default function Home() {
   return (
-    <main style={{ minHeight: "100vh", background: "#07080A" }}>
-      <div className="space-y-2">
+    <main style={{ minHeight: "100vh", }}>
+      <section style={{}}>
         <Marquee />
-        
-      </div>
         <HeroSection />
         <Marquee reverse />
-      <section style={{}}>
-        <Timeline/>
       </section>
+        <Timeline/>
+      
     </main>
   );
 }

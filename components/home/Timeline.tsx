@@ -5,26 +5,28 @@ type EventType = {
   id: string;
   year: string;
   title: string;
-  link?: string;
   highlight?: boolean;
 };
 
 const Events: EventType[] = [
-  { id: "1", year: "2025", title: "TBA", link: "#", highlight: true },
-  { id: "2", year: "2024", title: "Metavasis",  link: "#" },
-  { id: "3", year: "2023", title: "Ta Panta Rhei",  link: "#" },
-  { id: "4", year: "2022", title: "Redefine",  link: "#" },
-  { id: "5", year: "2021", title: "Event 2021",  link: "#" },
-  { id: "6", year: "2020", title: "Event 2020",  link: "#" },
-  { id: "7", year: "2019", title: "Event 2019", link: "#" },
-  { id: "8", year: "2018", title: "Event 2018", link: "#" },
-  { id: "9", year: "2017", title: "Event 2017",  link: "#" },
-  { id: "10", year: "2016", title: "Event 2016",  link: "#" },
+  { id: "0", year: "2026", title: "TBA ", highlight: true },
+  { id: "1", year: "2025", title: "Luminescense "},
+  { id: "2", year: "2024", title: "Urban Maze" },
+  { id: "3", year: "2023", title: "IdeasWorthSpreading"},
+  { id: "4", year: "2022", title: "Reconcile" },
+  { id: "5", year: "2021", title: "Incentive"},
+  { id: "6", year: "2020", title: "Δεν το βρισκω",},
+  { id: "7", year: "2019", title: "Connect the Pieces",},
+  { id: "8", year: "2018", title: "Elephant in The Room",},
+  { id: "9", year: "2017", title: "Break The Pattern", },
+  { id: "10", year: "2016", title: "Frameworks ", },
 ];
 
 export default function Timeline({ events = Events }: { events?: EventType[] }) {
   return (
-    <section className="relative max-w-7xl mx-auto px-6 py-16">
+    
+    <section className="relative max-w-7xl mx-auto px-6 py-16 text-5xl md:text-7xl font-bold">
+      Our History
       {/* Grid: 9 columns on md+, single column on mobile */}
       <div className="grid grid-cols-1 md:grid-cols-9 gap-y-15 items-start">
         {/* Center vertical line column: occupies column 5 on md */}

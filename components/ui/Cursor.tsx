@@ -10,5 +10,6 @@ export default function Cursor() {
     });
   }, []);
 
-  return <div className="cursor fixed top-0 left-0 w-6 h-6 bg-tedx-red rounded-full pointer-events-none transition-transform duration-200 mix-blend-difference z-[9999]" />;
+  return <div className="cursor fixed top-0 left-0 w-6 h-6 bg-tedx-red rounded-full 
+  pointer-events-none transition-transform duration-200 mix-blend-difference z-[9999]" />;
 }

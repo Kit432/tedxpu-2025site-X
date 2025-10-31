@@ -3,12 +3,20 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative h-screen bg-[url('/images/aexevent_logos-1.png')] bg-cover bg-center text-white min-h-[80vh] flex items-center justify-center overflow-hidden">
-      {/* Background overlay (optional if you add a background image later) */}
-      <div className="absolute inset-0  from-black/80 to-black/60 z-0"></div>
+    <section className="relative h-screen text-white flex items-center justify-center overflow-hidden">
+      {/* 🔴 Background Image Layer */}
+      <Image
+        src="/images/aexevent_logos-1.png"
+        alt="TEDx Panteion background"
+        fill
+        className="object-cover opacity-30"  // adjust opacity here
+        priority
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/80 to-black/60 z-0"></div>
 
       {/* Content */}
       <motion.div
@@ -26,7 +34,7 @@ export default function HeroSection() {
         </p>
         <div className="flex justify-center">
           <a
-            href="#about"
+            href="/event"
             className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-full font-semibold text-lg transition-all duration-300"
           >
             Join the Event
