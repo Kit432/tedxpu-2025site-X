@@ -33,9 +33,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased absolute inset-0 z-[1]`}>
+        className={`${geistSans.variable} ${geistMono.variable} antialiased absolute inset-0 z-1 pt-24`}>
           <ParticlesBackground />
-          <Cursor />
+          <div className="hidden lg:block">
+            <Cursor />
+          </div>
           <Header />
         <main className="">{children}</main>
         <Footer />

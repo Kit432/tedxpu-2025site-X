@@ -2,23 +2,35 @@
 
 "use client";
 import { FaFacebookF, FaInstagram, FaTiktok, FaSpotify, FaTwitter, FaYoutube } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer className="bg-black text-white mt-12">
-      <div className="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-        {/* Left Text */}
-        <p className="text-sm max-w-sm">
-          This independent TEDx event is operated under license from TED.
-        </p>
+      <div className="px-16 py-8 flex flex-col md:flex-row justify-between items-start gap-6">
+          {/* Replace /logo.png with your actual logo in /public/images */}
+          <div className="flex flex-col space-y-3 max-w-xs">
+          <Image
+            src="/images/logo-white.png"
+            alt="TEDx Logo"
+            width={200}
+            height={50}
+          />
+
+        <p className="  text-gray-300">
+            This independent <span className="text-red-600 left">TEDx</span> event is operated under license from TED.
+          </p>
+        </div>
 
         {/* Center Text */}
-        <p className="text-xs text-gray-400 text-center md:absolute left-1/2 transform md:-translate-x-1/2">
+        <div className="md:flex-1 flex justify-center">
+        <p className="text-xs text-gray-400 text-center md:absolute left-1/2 transform md:-translate-x-1/2 lg:my-30">
           ALL RIGHTS RESERVED © 2025
         </p>
+        </div>
 
         {/* Social Icons */}
-        <div className="flex space-x-5 text-xl">
+        <div className="flex space-x-5 text-xl lg:py-12">
           {/* Replace # with your actual social links */}
           <a href="https://web.facebook.com/TEDxPANTEIONUNIVERSITY/?_rdc=1&_rdr#" aria-label="Facebook" className="hover:text-red-500">
             <FaFacebookF />

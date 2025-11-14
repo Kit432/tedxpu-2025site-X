@@ -4,14 +4,23 @@
 import Image from "next/image";
 import Link from "next/link";
 import Navigation from "@/components/layout/Navigation";
+import { useSound } from "@/hooks/useSound";
 
 export default function Header() {
+  const playClick = useSound("/sounds/Persona5.mp3");
+
+  const handleClick = () => {
+    playClick();
+  };
+  
   return (
-    <header className="w-full bg-black text-white relative z-50">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
-        <div className="flex items-center space-x-2">
+    <header className="w-full bg-black text-white fixed top-0 left-0 z-50 shadow-lg">
+      <div className="max-w-7xl mx-auto flex  items-center justify-between px-6 py-3 lg:flex-row lg:gap-x-160 gap-10">
+        <div className="w-full lg:w-1/2">
           {/* Replace /logo.png with your actual logo in /public/images */}
-          <Link href="/">
+          <Link href="/"
+            onClick={playClick}
+          >
           <Image
             src="/images/logo-white.png"
             alt="TEDx Logo"
@@ -21,13 +30,10 @@ export default function Header() {
           />
           </Link>
         </div>
-
-        <Navigation />
-
-        {/* Mobile nav placeholder (optional, add later) */}
-        <div className="md:hidden">
-          {/* Add mobile menu button later if needed */}
+        <div className="lg:block lg:w-1/2">
+          <Navigation />
         </div>
+
       </div>
     </header>
   );

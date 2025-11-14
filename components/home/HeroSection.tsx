@@ -7,16 +7,16 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative h-screen text-white flex items-center justify-center overflow-hidden">
+    <section className="relative h-screen text-white flex items-center justify-center overflow-hidden ">
       {/* 🔴 Background Image Layer */}
       <Image
         src="/images/aexevent_logos-1.png"
         alt="TEDx Panteion background"
         fill
-        className="object-cover opacity-30"  // adjust opacity here
+        className="object-cover opacity-50"  // adjust opacity here
         priority
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/80 to-black/60 z-0"></div>
+      <div className="absolute inset-0 bg-linear-to-b from-black/80 to-black/60 z-0"></div>
 
       {/* Content */}
       <motion.div
@@ -25,13 +25,16 @@ export default function HeroSection() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
+        <h1 className="text-4xl md:text-7xl font-bold leading-tight mb-6">
           <span className="text-red-600 left">TEDx</span> PanteionUniversity
         </h1>
-        <p className="text-lg md:text-xl text-gray-300 mb-8">
-          Ideas worth spreading from the heart of Athens — connecting creativity,
-          research, and community.
-        </p>
+        <h2 className="text-lg md:text-3xl text-gray-300 mb-4 font-bold leading-tight">
+          Γιορτάζουμε 10 χρόνια TEDxPanteionUniversity.
+        </h2>
+        <h2 className="text-lg md:text-xl text-gray-300 mb-8">
+          Μια δεκαετία γεμάτη ιδέες, έμπνευση, δημιουργία και ανθρώπους που τόλμησαν να μοιραστούν το 
+          όραμά τους.
+        </h2>
         <div className="flex justify-center">
           <a
             href="/event"

@@ -15,7 +15,6 @@ const Events: EventType[] = [
   { id: "3", year: "2023", title: "IdeasWorthSpreading"},
   { id: "4", year: "2022", title: "Reconcile" },
   { id: "5", year: "2021", title: "Incentive"},
-  { id: "6", year: "2020", title: "Δεν το βρισκω",},
   { id: "7", year: "2019", title: "Connect the Pieces",},
   { id: "8", year: "2018", title: "Elephant in The Room",},
   { id: "9", year: "2017", title: "Break The Pattern", },
@@ -24,41 +23,59 @@ const Events: EventType[] = [
 
 export default function Timeline({ events = Events }: { events?: EventType[] }) {
   return (
-    
-    <section className="relative max-w-7xl mx-auto px-6 py-16 text-5xl md:text-7xl font-bold">
-      Our History
-      {/* Grid: 9 columns on md+, single column on mobile */}
-      <div className="grid grid-cols-1 md:grid-cols-9 gap-y-15 items-start">
-        {/* Center vertical line column: occupies column 5 on md */}
-        {/* We create an empty column for col 5 on md to hold the line and markers */}
-        {/* Items will occupy col 1-4 or col 6-9 */}
-        {events.map((ev, idx) => {
-          const side = idx % 2 === 0 ? "right" : "left"; // alternate starting with right for screenshot parity
-          return (
-            <div key={ev.id} className="md:contents">
-              {/* TimelineItem will place itself inside col spans using its classes */}
-              <TimelineItem event={ev} side={side} />
-
-              {/* Center marker & connector — on md screens only */}
-              <div className="hidden md:flex col-span-1 md:col-start-5 md:col-end-6 items-center justify-center">
-                <div className="relative flex flex-col items-center">
-                  {/* dashed vertical line goes full height of container via absolute element on parent section */}
-                  <span className="block bg-transparent w-px h-full relative">
-                    {/* marker */}
-                    <span className="absolute -translate-y-1/2 top-1/2 transform">
-                      <span className="block w-3 h-3 rounded-full bg-red-500 ring-2 ring-black" />
-                    </span>
-                  </span>
+    <section className="relative max-w-7xl mx-auto px-6 py-16">
+      <h2 className="text-5xl lg:text-7xl font-bold mb-16">Our History</h2>
+      
+      {/* Desktop Timeline - Hidden on mobile */}
+      <div className="hidden md:block relative">
+        {/* Vertical dashed line */}
+        <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-0.5 border-l-2 border-dashed border-gray-700" />
+        
+        {/* Timeline items */}
+        <div className="space-y-24">
+          {events.map((ev, idx) => {
+            const side = idx % 2 === 0 ? "right" : "left";
+            return (
+              <div key={ev.id} className="relative flex items-center">
+                {/* Left side content */}
+                <div className={`w-1/2 ${side === "left" ? "pr-12 text-right" : ""}`}>
+                  {side === "left" && <TimelineItem event={ev} side={side} />}
+                </div>
+                
+                {/* Center dot */}
+                <div className="absolute left-1/2 transform -translate-x-1/2 z-10">
+                  <div className="w-4 h-4 rounded-full bg-red-500 border-gray-700" />
+                </div>
+                
+                {/* Right side content */}
+                <div className={`w-1/2 ${side === "right" ? "pl-12" : ""}`}>
+                  {side === "right" && <TimelineItem event={ev} side={side} />}
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
 
-      {/* Vertical dashed line overlay (md and up) */}
-      <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 top-28 bottom-16 pointer-events-none">
-        <div className="h-full border-l-2 border-dashed border-gray-700" />
+      {/* Mobile Timeline - Line on left, all items on right */}
+      <div className="md:hidden relative pl-8">
+        {/* Vertical dashed line */}
+        <div className="absolute left-0 top-0 bottom-0 w-0.5 border-l-2 border-dashed border-gray-700" />
+        
+        {/* Timeline items */}
+        <div className="space-y-12">
+          {events.map((ev) => (
+            <div key={ev.id} className="relative">
+              {/* Dot */}
+              <div className="absolute -left-9 top-10 transform">
+                <div className="w-3 h-3 rounded-full bg-red-500 border-gray-700" />
+              </div>
+              
+              {/* Content */}
+              <TimelineItem event={ev} side="right" />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
