@@ -1,32 +1,33 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { events } from "@/data/historyEvents";
 import { motion, AnimatePresence } from "framer-motion";
 import { toEmbedUrl } from "@/utils/convertYoutube";
 import { useSearchParams } from "next/navigation";
-import { useEffect } from "react";
 
-export default function HistoryPage() {
+function HistoryContent() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const params = useSearchParams();
-  const selectedEvent = params.get("event");
+  const [selectedEvent, setSelectedEvent] = useState<string | null>(null);
 
   useEffect(() => {
-  if (!selectedEvent) return;
+    const eventParam = params.get("event");
+    setSelectedEvent(eventParam);
+  }, [params]);
 
-  // Find the event by year
-  const idx = events.findIndex(ev => ev.year.toString() === selectedEvent);
+  useEffect(() => {
+    if (!selectedEvent) return;
 
-  if (idx !== -1) {
-    setOpenIndex(idx);
-    // optional: smooth scroll to it
-    setTimeout(() => {
-      const el = document.getElementById(`event-${idx}`);
-      el?.scrollIntoView({ behavior: "smooth", block: "start" });
-    }, 300);
-  }
-}, [selectedEvent]);
+    const idx = events.findIndex(ev => ev.year.toString() === selectedEvent);
+    if (idx !== -1) {
+      setOpenIndex(idx);
+      setTimeout(() => {
+        const el = document.getElementById(`event-${idx}`);
+        el?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 300);
+    }
+  }, [selectedEvent]);
 
   return (
     <main className="min-h-screen  text-white px-6 py-16">
@@ -104,5 +105,17 @@ export default function HistoryPage() {
         </div>
       </div>
     </main>
+  );
+}
+
+export default function HistoryPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen flex items-center justify-center text-white">
+        <div className="text-xl">Loading...</div>
+      </div>
+    }>
+      <HistoryContent />
+    </Suspense>
   );
 }
