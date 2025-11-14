@@ -82,7 +82,7 @@ export default function HistoryPage() {
                       <h3 className="text-xl font-semibold mb-2 text-red-500">Speakers</h3>
                       
                       <ul className="space-y-2">
-                        {event.speakers.map((sp, i) => (
+                        {event.speakers?.map((sp, i) => (
                           <li key={i}>
                             <a
                               href={sp.url}
