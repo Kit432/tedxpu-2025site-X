@@ -19,10 +19,10 @@ export default function ParticlesBackground() {
         fpsLimit: 60,
         interactivity: {
           events: { onHover: { enable: true, mode: "repulse" } },
-          modes: { repulse: { distance: 100, duration: 0.4 } },
+          modes: { repulse: { distance: 50, duration: 0.8 } },
         },
         particles: {
-          color: { value: "#ffffff" },
+          color: { value: "#fabcff" },
           links: {
             color: "#ffffff",
             distance: 150,
@@ -37,7 +37,7 @@ export default function ParticlesBackground() {
           },
           number: {
             density: { enable: true },
-            value: 60,
+            value: 80,
           },
           opacity: { value: 0.3 },
           shape: { type: "circle" },

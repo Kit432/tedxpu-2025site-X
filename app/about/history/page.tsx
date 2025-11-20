@@ -30,7 +30,7 @@ function HistoryContent() {
   }, [selectedEvent]);
 
   return (
-    <main className="min-h-screen  text-white px-6 py-16">
+    <main className="min-h-screen  text-white px-6 py-20">
       <div className="max-w-4xl mx-auto">
 
         <h1 className="text-4xl md:text-6xl font-bold text-center mb-16">
@@ -69,14 +69,40 @@ function HistoryContent() {
                   >
                     <p className="text-gray-300">{event.description}</p>
 
-                    {/* Intro video */}
-                    {event.introVideo && (
-                      <iframe
-                        className="w-full aspect-video mt-4 rounded-lg"
-                        src={toEmbedUrl(event.introVideo)}
-                        allowFullScreen
-                      />
-                    )}
+                    {/* Logo + Optional Video */}
+                    <div
+                      className={`mt-6 grid gap-6 items-center ${
+                        event.introVideo && event.introVideo.trim() !== ""
+                          ? "grid-cols-1 md:grid-cols-2" // video exists → 2 columns
+                          : "grid-cols-1 place-items-center" // no video → centered large logo
+                      }`}
+                    >
+
+                      {/* LOGO */}
+                      <div
+                        className={
+                          event.introVideo && event.introVideo.trim() !== ""
+                            ? ""
+                            : "md:w-3/4" // no video → larger logo (75% width)
+                        }
+                      >
+                        <img
+                          src={event.logo}
+                          alt={`${event.title} logo`}
+                          className="w-full h-auto object-contain rounded-lg"
+                        />
+                      </div>
+
+                      {/* VIDEO (only if exists) */}
+                      {event.introVideo && event.introVideo.trim() !== "" && (
+                        <iframe
+                          className="w-full aspect-video rounded-lg"
+                          src={toEmbedUrl(event.introVideo)}
+                          allowFullScreen
+                        />
+                      )}
+
+                    </div>
 
                     {/* Speakers list */}
                     <div className="mt-4">

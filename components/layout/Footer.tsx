@@ -9,7 +9,7 @@ export default function Footer() {
     <footer className="text-white mt-12">
       <div className="px-6 py-8 flex flex-col md:flex-row justify-between items-start gap-6">
           {/* Replace /logo.png with your actual logo in /public/images */}
-          <div className="flex flex-col space-y-1">
+          <div className="-ml-2 flex flex-col space-y-1">
           <Image
             src="/images/logo-white.png"
             alt="TEDx Logo"

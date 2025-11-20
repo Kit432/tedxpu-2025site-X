@@ -7,15 +7,22 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative h-screen text-white flex items-center justify-center overflow-hidden ">
+    <section className="relative 
+                        min-h-[60lvh]     /* Mobile safe height */
+                        sm:min-h-[90svh]  /* Small devices */
+                        md:min-h-screen    /* Tablets + small laptops */
+                        lg:min-h-screen    /* Large screens */
+                      text-white flex flex-col items-center justify-center overflow-hidden">
       {/* 🔴 Background Image Layer */}
-      <Image
-        src="/images/aexevent_logos-1.png"
-        alt="TEDx Panteion background"
-        fill
-        className="object-cover opacity-50"  // adjust opacity here
-        priority
-      />
+      <div className="absolute inset-0 scale-[1.2] md:scale-[1.20] landscape:scale-[1.3]">
+        <Image
+          src="/images/X_Logo.png"
+          alt="TEDx Panteion background"
+          fill
+          className="object-contain opacity-60"  // adjust opacity here
+          priority
+        />
+      </div>
       <div className="absolute inset-0 bg-linear-to-b from-black/60 to-black/30 z-0"></div>
 
       {/* Content */}

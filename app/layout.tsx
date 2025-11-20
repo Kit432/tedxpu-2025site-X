@@ -8,6 +8,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Cursor from "@/components/ui/Cursor";
 import ParticlesBackground from "@/components/ui/ParticlesBackground";
+import ScrollToTop from "@/utils/scrollToTop";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,6 +35,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased absolute inset-0 z-1 pt-24`}>
+          <ScrollToTop />
           <ParticlesBackground />
           <div className="hidden lg:block">
             <Cursor />
