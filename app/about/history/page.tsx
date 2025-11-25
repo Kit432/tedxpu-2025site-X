@@ -34,7 +34,7 @@ function HistoryContent() {
       <div className="max-w-4xl mx-auto">
 
         <h1 className="text-4xl md:text-6xl font-bold text-center mb-16">
-          Our <span className="text-red-600">10-Year</span> Journey
+          Our History
         </h1>
 
         <div className="space-y-6">
@@ -121,6 +121,20 @@ function HistoryContent() {
                           </li>
                         ))}
                       </ul>
+                    </div>
+
+                    {/* SPONSORS (only if exists) */}
+                    <div className="mt-4">
+                      {event.sponsors && event.sponsors.trim() !== "" && (
+                        <h3 className="text-xl font-semibold mb-2 text-red-500">Sponsors</h3>
+                      )}
+                      {event.sponsors && event.sponsors.trim() !== "" && (
+                        <img
+                          src={event.sponsors}
+                          alt={`${event.title} logo`}
+                          className="w-full h-auto object-contain rounded-lg"
+                        />
+                      )}
                     </div>
                   </motion.div>
                 )}

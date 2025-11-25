@@ -14,7 +14,7 @@ export default function HeroSection() {
                         lg:min-h-screen    /* Large screens */
                       text-white flex flex-col items-center justify-center overflow-hidden">
       {/* 🔴 Background Image Layer */}
-      <div className="absolute inset-0 scale-[1.2] md:scale-[1.20] landscape:scale-[1.3]">
+      <div className="absolute inset-0 scale-[1.2] md:scale-[1.10] landscape:scale-[1.14]">
         <Image
           src="/images/X_Logo.png"
           alt="TEDx Panteion background"
@@ -32,10 +32,19 @@ export default function HeroSection() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h1 className="text-4xl md:text-7xl font-bold leading-tight mb-6">
-          <span className="text-red-600 left">TEDx</span> PanteionUniversity
+        <h1 className="text-4xl md:text-7xl font-bold leading-tight mb-6 px-36">
+          <div className="-ml-2 flex flex-col space-y-1">
+                    <Image
+                      src="/images/logo-white.png"
+                      alt="TEDx Logo"
+                      width={700}
+                      height={100}
+                    />
+          
+                 
+                  </div>
         </h1>
-        <h2 className="text-lg md:text-3xl text-gray-300 mb-4 font-bold leading-tight">
+        <h2 className="text-lg md:text-3xl text-gray-300 mb-4 leading-tight">
           Γιορτάζουμε 10 χρόνια TEDxPanteionUniversity.
         </h2>
         <h2 className="text-lg md:text-xl text-gray-300 mb-8">

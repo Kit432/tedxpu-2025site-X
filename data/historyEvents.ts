@@ -414,7 +414,13 @@ underlining how our consumption influences our viewpoints.`,
   {
     year: 2024,
     title: "Urban Maze",
-    description: "",
+    description: `Ένας λαβύρινθος από ανθρώπινες ιστορίες και αστικές εμπειρίες. Μέσα στο λαβύρινθο, κάθε μονοπάτι κρύβει ένα μυστικό και μια νέα ανακάλυψη.
+
+Στις πόλεις που ζούμε, κάθε σημείο, κάθε κτήριο, κάθε δρόμος κρύβει μια μοναδική ιστορία, που ίσως ποτέ δεν αναρωτηθήκαμε αν πρέπει να μάθουμε. Μέσα σε αυτές τις πόλεις αναζητάμε απεγνωσμένα μια σύνδεση, αλλά δεν είναι πάντα εφικτή.
+
+Κάθε πρόσωπο σε αυτό το λαβύρινθο φέρνει μια νέα διάσταση στο παζλ της ζωής στην πόλη, ενσωματώνοντας διαφορετικές πτυχές της καθημερινότητάς μας.
+
+Ελάτε να ταξιδέψουμε μαζί στο λαβύρινθο, και να ανακαλύψουμε την έξοδο του. Μία έξοδος, που θα μας βοηθήσει να κατανοήσουμε τόσο τους εαυτούς μας, όσο και τον κόσμο γύρω μας.`,
     introVideo: "",
     logo: "/images/history/2024.jpg",
     speakers: [
@@ -468,11 +474,54 @@ underlining how our consumption influences our viewpoints.`,
   {
     year: 2025,
     title: "Luminescence",
-    description: "",
+    description: `Η θεματική «Luminescence» ενέπνευσε ένα πλούσιο πρόγραμμα ομιλιών και δράσεων.
+Διακεκριμένοι ομιλητές από το χώρο των επιστημών, των τεχνών, της κοινωνίας και της
+επιχειρηματικότητας μοιράστηκαν ιστορίες που αναδεικνύουν τη δύναμη της πρόκλησης, της
+μεταμόρφωσης και της συλλογικότητας.`,
     introVideo: "",
     logo: "/images/history/2025.jpg",
+    sponsors: "/images/Sponsors2025.jpg",
     speakers: [
-
+      {
+        title: "From Photosynthesis to Bioluminescence",
+        name: "Spyros Gkelis",
+        url: "https://www.youtube.com/watch?v=5lOjJLE4GRA&list=PLdBayfDMYEO5PpafbTGOQc0a1PKHHw-3S&index=2"
+      },
+      {
+        title: "Rethinking AI and Well Being at Work",
+        name: "Angeliki Papasava",
+        url: "https://www.youtube.com/watch?v=b7w8JSRE5c8&list=PLdBayfDMYEO5PpafbTGOQc0a1PKHHw-3S&index=2"
+      },
+      {
+        title: "You Don't Need to be a Tech Builder to Run a Start Up",
+        name: "Dimitris Komninos",
+        url: "https://www.youtube.com/watch?v=GIjiCMy9Vio&list=PLdBayfDMYEO5PpafbTGOQc0a1PKHHw-3S&index=3"
+      },
+      {
+        title: "Why Truth Always Finds the Light",
+        name: "Thanasis Katerinopoulos",
+        url: "https://www.youtube.com/watch?v=qSIfcRCYvTA&list=PLdBayfDMYEO5PpafbTGOQc0a1PKHHw-3S&index=4"
+      },
+      {
+        title: "Can you Hear my Voice? Life with an Autistic Child",
+        name: "Giorgos Giotsas",
+        url: "https://www.youtube.com/watch?v=8peS39go__w&list=PLdBayfDMYEO5PpafbTGOQc0a1PKHHw-3S&index=5"
+      },
+      {
+        title: "I See a Firefly in You: The Hidden Light of Learning",
+        name: "Zabel Mouratian",
+        url: "https://www.youtube.com/watch?v=plht6eptDno&list=PLdBayfDMYEO5PpafbTGOQc0a1PKHHw-3S&index=6"
+      },
+      {
+        title: "Why Hard Work Beats Talent - Every Time",
+        name: "Panos (Beta) Vouros",
+        url: "https://www.youtube.com/watch?v=IUv5YNDdzwg&list=PLdBayfDMYEO5PpafbTGOQc0a1PKHHw-3S&index=7"
+      },
+      {
+        title: "The Earthquake That Can Rebuild Us",
+        name: "Marilia Antoniadou",
+        url: "https://www.youtube.com/watch?v=dcJHK53hd2A&list=PLdBayfDMYEO5PpafbTGOQc0a1PKHHw-3S&index=8"
+      },
     ]
   }
 ];

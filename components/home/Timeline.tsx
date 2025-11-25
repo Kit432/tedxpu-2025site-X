@@ -12,7 +12,7 @@ type EventType = {
 };
 
 const Events: EventType[] = [
-  { id: "0", year: "2026", title: "TBA ", image: "/images/history/2025.jpg"},
+  { id: "0", year: "2026", title: "TBA ", image: "/images/history/2026.jpg"},
   { id: "1", year: "2025", title: "Luminescense", image: "/images/history/2025.jpg"},
   { id: "2", year: "2024", title: "Urban Maze", image: "/images/history/2024.jpg"},
   { id: "3", year: "2023", title: "Feed", image: "/images/history/2023.jpg"},
@@ -26,7 +26,7 @@ const Events: EventType[] = [
 
 export default function Timeline({ events = Events }: { events?: EventType[] }) {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-20">
+    <section className="max-w-7xl mx-auto px-6 py-10">
       <h2 className="text-5xl lg:text-7xl font-bold mb-16 text-center">
         Our History
       </h2>
@@ -63,7 +63,7 @@ export default function Timeline({ events = Events }: { events?: EventType[] }) 
               </div>
 
               {/* Overlay */}
-              <div className="absolute inset-0 bg-linear-to-b from-black/60 to-black/80" />
+              <div className="absolute inset-0 bg-linear-to-b from-black/20 to-black/80" />
 
               {/* Text */}
               <div className="relative p-6">

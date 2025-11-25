@@ -48,7 +48,7 @@ export default function Navigation() {
   ];
 
   const aboutLinks = [
-    { href: "/about", label: "Tedx" },
+    { href: "/about", label: "TEDx" },
     { href: "/about/team", label: "Our Team" },
     { href: "/about/history", label: "Our History" },
   ];
