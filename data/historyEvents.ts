@@ -292,24 +292,21 @@ Different and at the same time unique for everyone, the incentive determines you
   {
     year: 2022,
     title: "Happy Medium",
-    description: `φ = 1.61803...
-  Numbers that seem unfamiliar at first sight, a concept that feels strange beyond the
-  pages of a math book, numbers that lose their meaning in the swamp of information
-  we dive into every day.
-
-  However, the number φ symbolizes the Happy Medium, a concept that seems
-  entirely mathematical but at the end it's way more than that.
-
-  We can find the essence of φ in the arts, nature, architecture, human bodies and
-  facial characteristics. Happy Medium reflects perfection, stability, the ideal state
-  between two polar opposites. It symbolizes the balance point between perfect and
-  imperfect — this imaginary line that delineates the concept of natural harmony,
-  defines the most ideal outcome of a situation and constitutes balance.
-
-  Everyone seeks and attempts to apply this balance to their lives in whatever form
-  seems the most appropriate for them. Even though sometimes this balance can seem
-  unachievable, our actions and choices reveal our personal journey toward our very
-  own Happy Medium.`,
+    description: `φ = 1.61803... Αριθμοί που φαίνονται άγνωστοι εκ πρώτης όψεως, μια έννοια που
+μοιάζει περίεργη πέρα από τις σελίδες των μαθηματικών βιβλίων, αριθμοί που χάνουν
+το νόημα τους μέσα στο πλήθος των πληροφοριών οπού βυθιζόμαστε καθημερινά.
+Παρόλα αυτά , ο αριθμός φ συμβολίζει το Happy Medium, μια έννοια που μπορεί να
+μοιάζει μόνο μαθηματική, αλλά είναι πολλά παραπάνω. Μπορούμε να βρούμε την
+έννοια του φ στις τέχνες, στη φύση, στην αρχιτεκτονική, στα ανθρώπινα σώματα και
+στα ανθρώπινα χαρακτηριστικά. Το Happy Medium αντανακλά την τελειότητα, τη
+σταθερότητα, το ιδανικό σημείο μεταξύ δύο εντελώς αντίθετων πόλων Συμβολίζει την
+ισορροπία μεταξύ της τελειότητας και της ατέλειας- αυτή τη νοητή γραμμή που
+οριοθετεί την έννοια της φυσικής αρμονίας, ορίζει το αρτιότατο αποτέλεσμα μιας
+κατάστασης και συνθέτει την ισορροπία. Όλοι ψάχνουν και προσπαθούν να
+εφαρμόσουν την ισορροπία στην ζωή τους με οποιονδήποτε τρόπο μοιάζει πιο
+συμβατός για αυτούς. Ακόμα και αν μερικές φορές η ισορροπία μοιάζει αδύνατη, οι
+πράξεις μας και οι επιλογές μας αποκαλύπτουν το προσωπικό μας ταξίδι προς το δικό
+μας Happy Medium.`,
     introVideo: "",
     logo: "/images/history/2022.jpg",
     speakers: [
@@ -353,20 +350,18 @@ Different and at the same time unique for everyone, the incentive determines you
   {
     year: 2023,
     title: "Feed",
-    description: `The concept of "FEED" has been used figuratively and literally throughout
-history to describe various concepts.
-Literally, the act of feeding can represent nourishment, survival and
-nourishment of the soul . It can also represent conveying knowledge, wisdom
-and guidance.
-Today, "FEED" is something we check very often, if not daily. It exists on our
-cell phones, tablets or computers, shaping our perception of the world📱.
-However, what we see is not always accurate, and at times, it fails to present the
-complete picture.
-One the other hand, "feedback" is something we ask our employers and
-teachers. Something that can make us better as employees and strengthen our
-relationships.
-In summary, the concept of "feed" unites the material and the intellectual,
-underlining how our consumption influences our viewpoints.`,
+    description: `Η ιδέα του "FEED" έχει χρησιμοποιηθεί κυριολεκτικά και μεταφορικά στην ιστορία για
+να περιγράψει πολλές έννοιες. Κυριολεκτικά, η πράξη του να ταΐζεις κάποιον (σημασία
+του αγγλικού ρήματος feed) συμβολίζει τη θρέψη, επιβίωση και θρέψη της ψυχής.
+Μπορεί επίσης να αντιπροσωπεύει την μετάδοση της γνώσης, σοφία και καθοδήγηση.
+Σήμερα το "FEED" είναι κάτι που ελέγχουμε πολύ συχνά, αν όχι καθημερινά. Υπάρχει
+στα κινητά μας, στα tablets μας, στους υπολογιστές μας, διαμορφώνοντας την
+αντίληψη μας για τον κόσμο. Παρόλο αυτά ο,τι βλέπουμε δεν είναι πάντα έγκυρο,
+μερικές φορές αδυνατεί να μας παρουσιάσει την ολοκληρωμένη εικόνα. Απο την άλλη,
+το "feedback” είναι κάτι που ζητάμε από απο τους εργοδότες μας και τους καθηγητές
+μας. Μερικές φορες αυτό μπορεί να μας κάνει καλύτερους εργαζόμενους και να
+δυναμώσει τις σχέσεις μας. Συνοψίζοντας, η ιδέα του "feed" εννόνει το υλικο και το
+πνευματικό, υπογραμμίζοντας το πως η κατανάλωση επηρεάζει τις απόψεις μας.`,
     logo: "/images/history/2023.jpg",
     speakers: [
       {

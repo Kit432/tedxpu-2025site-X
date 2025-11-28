@@ -13,7 +13,7 @@ type EventType = {
 
 const Events: EventType[] = [
   { id: "0", year: "2026", title: "TBA ", image: "/images/history/2026.jpg"},
-  { id: "1", year: "2025", title: "Luminescense", image: "/images/history/2025.jpg"},
+  { id: "1", year: "2025", title: "Luminescence", image: "/images/history/2025.jpg"},
   { id: "2", year: "2024", title: "Urban Maze", image: "/images/history/2024.jpg"},
   { id: "3", year: "2023", title: "Feed", image: "/images/history/2023.jpg"},
   { id: "4", year: "2022", title: "Happy Medium", image: "/images/history/2022.jpg"},
