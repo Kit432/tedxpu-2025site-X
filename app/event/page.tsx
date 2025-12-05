@@ -31,7 +31,7 @@ export default function MissionPage() {
             <p>
               Για πολλούς το <span className="text-red-600 font-semibold">10</span> είναι ένας αριθμός. 
               Το <span className="text-red-600 font-semibold">Χ</span> ένας λατινικός χαρακτήρας.  
-              Για το <span className="text-red-500 font-bold">TEDxPanteion University</span> το 10, το Χ είναι γιορτή.  
+              Για το <span className="text-red-500 font-bold">TEDx</span>Panteion University το 10, το Χ είναι γιορτή.  
               Είναι χαρά, εμπειρίες, ιδέες, δημιουργικότητα και συνεργασία.
             </p>
 

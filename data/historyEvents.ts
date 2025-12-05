@@ -2,11 +2,10 @@ export const events = [
   {
     year: 2016,
     title: "Frameworks",
-    description: `The "Frameworks" theme is an idea that stems from the active
-interaction and continuous evolution of all the different scientific fields
-of Panteion University, with the human factor as the common denominator.
-
-All speakers are active members of the scientific and academic world...`,
+    description: `Η θεματική «Frameworks» είναι μια ιδέα που πηγάζει απο την ενεργή 
+    αλληλεπίδραση και συνεχόμενη εξέλιξη από όλα τα διαφορετικά επιστημονικά πεδία 
+    του Παντείου Πανεπιστημίου, με τον ανθρώπινο παράγοντα ως τον κοινό παρονομαστή. 
+    Όλοι οι ομιλητές είναι ενεργά μέλη του επιστημονικού και ακαδημαϊκού κόσμου.`,
     introVideo: "https://youtu.be/2oGuaUFAA_o?si=npXw95iiEzwiJfud",
     logo: "/images/history/2016.jpg",
     speakers: [
@@ -115,11 +114,21 @@ All speakers are active members of the scientific and academic world...`,
   {
     year: 2018,
     title: "Elephant in The Room",
-    description: `“Do you notice or just pass by?
-How is it possible for you to live with an elephant in the same room but not be aware of it? Moving almost like an acrobat trying not to poke on something you can't even see.
-In the meantime, the elephant grows bigger. And as it gets bigger, you get smaller. You are not able to fit in the room anymore because it takes away your space and oxygen. Your denial to see it, feeds and increases it. But you keep your eyes shut remaining trapped in the darkness.
-The elephant has several names: Racism, Sex trafficking, Child Labor, Fake News, Depression, Body Shaming...But you pretend to not know any of them. Until when will your intentional ignorance give you alibi for your inaction?
-It definitely takes courage to admit the reality. To put your and society's problems under the revealing light of truth. Does the realization travel to the speed of light? When you admit and recognise the problem, you make the first step towards the solution.”
+    description: `Συνήθως παρατηρείς ή απλώς προσπερνάς τα ερεθίσματα γύρω σου; 
+    Πώς είναι δυνατόν να ζήσεις με έναν ελέφαντα στο ίδιο δωμάτιο με εσένα, 
+    αλλά να μην το έχεις αντιληφθεί; Κινούμενο σαν ένας ακροβάτης στην προσπάθεια 
+    του να μην τρυπήσει κάτι το οποίο ούτε καν βλέπεις. Στο μεταξύ, ο ελέφαντας 
+    ολοένα και μεγαλώνει. Και όσο περισσότερο μεγαλώνει, εσύ τόσο μικραίνεις. 
+    Πλέον, δεν χωράτε στο ίδιο δωμάτιο, αφού σου κόβει την ανάσα και το οξυγόνο. 
+    Η άρνηση σου να το δεις, το τροφοδοτεί και το αυξάνει. Αλλά κρατάς τα μάτια σου
+    κλειστά, έχοντας παραμείνει παγιδευμένος στο σκοτάδι. Ο ελέφαντας έχει διάφορα 
+    ονόματα: Ρατσισμός, Σωματεμπόριο, Παιδική Εργασία, Ψευδείς Ειδήσεις, Κατάθλιψη, 
+    Body Shaming… αλλά εσύ ακόμα παριστάνεις πως δεν τα γνωρίζεις. Μέχρι πότε η 
+    επιτηδευμένη σου άγνοια θα σου δίνει άλλοθι για την η απραγία σου; Δίχως αμφιβολία, 
+    χρειάζεται κουράγιο να αποδεχτείς την πραγματικότητα. Να περάσεις τα προβλήματα σου 
+    και της κοινωνίας κάτω από το φως της αλήθειας. Μήπως η συνειδητοποίηση ταξιδεύει με 
+    την ταχύτητα του φωτός; Όταν παραδεχτείς και αναγνωρίσεις το πρόβλημα, κάνεις το 
+    πρώτο βήμα προς την Λύση.
 `,
     logo: "/images/history/2018.jpg",
     introVideo: "https://youtu.be/Gae6OKsMA0M?si=UfqmOVbn4ePQahrY",
@@ -189,10 +198,16 @@ It definitely takes courage to admit the reality. To put your and society's prob
   {
     year: 2019,
     title: "The Age of Smupid",
-    description: `Connect the pieces
-The age of the contemporary human, who is “smarter” and at the same time “stupider” than ever. Among an ensemble of contradictions, you.
-You are the one who feels the change without changing your behavior. It’s the moment you believe that your actions move with you, while maybe you lose your ability to move, staying still. The conditions within which you live change and the situations shape your perception on an everyday basis. You “square” behaviors, feelings, humans and you let yourself be driven by the current developments. The square is divided into two supplemental pieces, which can be connected at any given moment. As long as you look the same fact from a different point of view.
-Are you ready to connect the pieces?`,
+    description: `Εννοώντας τα κομμάτια στην εποχή του σύγχρονου ανθρώπου, όπου είναι 
+    πιο «έξυπνος» και πιο «χαζός» από ποτέ. Ανάμεσα σε μια ποικιλία αντιθέσεων, εσύ. 
+    Εσύ είσαι αυτός που νιώθεις την αλλαγή, χωρίς όμως να αλλάζεις την συμπεριφορά σου. 
+    Είναι στιγμές που πιστεύεις πως οι πράξεις σου σε ακολουθούν, παρόλο που ταυτόχρονα, 
+    χάνεις την ικανότητα σου να κινηθείς, μένοντας ακίνητος. Οι συνθήκες μέσα στις οποίες 
+    ζεις αλλάζουν και οι καταστάσεις κατασκευάζουν την αντίληψη σου σε καθημερινή βάση. 
+    Οι «τετράγωνες» συμπεριφορές σου, συναισθήματα, άνθρωποι και εσύ αφήνεις τον εαυτό σου 
+    να κατευθύνεται από τωρινές δημιουργίες. Το τετράγωνο χωρίζεται σε δύο βασικά κομμάτια, 
+    τα οποία μπορούν να ενωθούν ανά πάσα ώρα και στιγμή. Αρκεί να βλέπεις το ίδιο γεγονός 
+    από διαφορετική οπτική γωνία. Είσαι έτοιμο να ενώσεις τα κομμάτια;`,
     logo: "/images/history/2019.jpg",
     introVideo: "",
     speakers: [
@@ -246,9 +261,21 @@ Are you ready to connect the pieces?`,
   {
     year: 2021,
     title: "Incentive",
-    description: `A notion that is abstract and different for everyone, which in essence is the driving force that is subconsciously behind every decision. The colors of everyday life that create associations and ideas for you. Incentive is the energy, the aura and the feeling that things around you emit.
-It is the cause for the new beginning, it is the impetus for every action, the essence and many times the reason to continue chasing the ultimate goal. The incentive is what inspires you and pushes you to continue despite any difficulties you may encounter. No matter how you interpret it, no matter how you think about it, "motivation" or "incentive" is, after all, the beginning of all things. Everything starts from your will and from whatever motivates you to pursue your goals and desires. Desires that arise from your character, personality, experiences and incentives that make you up. What are these incentives? Do you define them, or do they define you? How do they, eventually, mark your route?
-Different and at the same time unique for everyone, the incentive determines your thoughts, gives life to your ideas and it is your choice to follow it or not. Do you follow it and get where you want or do you never learn where it can lead you?`,
+    description: `Μια έννοια αφηρημένη και διαφορετική για τον καθένα, η οποία στην ουσία 
+    είναι η κινητήρια δύναμη που βρίσκεται υποσυνείδητα πίσω από κάθε απόφαση. 
+    Τα χρώματα της καθημερινής ζωής που δημιουργούν συνειρμούς και ιδέες για εσένα. 
+    Το Incentive είναι η ενέργεια, η αύρα και το συναίσθημα που εκπέμπουν τα πράγματα γύρω σου. 
+    Είναι η αιτία για το νέο ξεκίνημα, είναι η ώθηση για κάθε δράση, η ουσία και πολλές φορές 
+    ο λόγος για να συνεχίσεις να κυνηγάς τον απόλυτο στόχο. Το Incentive είναι αυτό που σε 
+    εμπνέει και σε ωθεί να συνεχίσεις παρά τις δυσκολίες που μπορεί να συναντήσεις. Όπως κι 
+    αν το ερμηνεύσεις, όπως κι αν το σκεφτείς, το “motivation” ή “incentive” είναι, τελικά, 
+    η αρχή των πάντων. Όλα ξεκινούν από τη δική σου θέληση και από ό,τι σε κινητοποιεί να 
+    επιδιώξεις τους στόχους και τις επιθυμίες σου. Επιθυμίες που προκύπτουν από τον χαρακτήρα, 
+    την προσωπικότητα, τις εμπειρίες και τα κίνητρα που σε συγκροτούν. Ποια είναι αυτά τα κίνητρα; 
+    Τα ορίζεις εσύ ή αυτά ορίζουν εσένα; Πώς, τελικά, σηματοδοτούν τη διαδρομή σου; 
+    Διαφορετικό και ταυτόχρονα μοναδικό για τον καθένα, το Incentive καθορίζει τις σκέψεις σου, 
+    δίνει ζωή στις ιδέες σου και είναι δική σου επιλογή αν θα το ακολουθήσεις ή όχι. 
+    Το ακολουθείς και φτάνεις εκεί που θέλεις ή δεν μαθαίνεις ποτέ πού θα μπορούσε να σε οδηγήσει;`,
     introVideo: "",
     logo: "/images/history/2021.jpg",
     speakers: [
@@ -292,21 +319,7 @@ Different and at the same time unique for everyone, the incentive determines you
   {
     year: 2022,
     title: "Happy Medium",
-    description: `φ = 1.61803... Αριθμοί που φαίνονται άγνωστοι εκ πρώτης όψεως, μια έννοια που
-μοιάζει περίεργη πέρα από τις σελίδες των μαθηματικών βιβλίων, αριθμοί που χάνουν
-το νόημα τους μέσα στο πλήθος των πληροφοριών οπού βυθιζόμαστε καθημερινά.
-Παρόλα αυτά , ο αριθμός φ συμβολίζει το Happy Medium, μια έννοια που μπορεί να
-μοιάζει μόνο μαθηματική, αλλά είναι πολλά παραπάνω. Μπορούμε να βρούμε την
-έννοια του φ στις τέχνες, στη φύση, στην αρχιτεκτονική, στα ανθρώπινα σώματα και
-στα ανθρώπινα χαρακτηριστικά. Το Happy Medium αντανακλά την τελειότητα, τη
-σταθερότητα, το ιδανικό σημείο μεταξύ δύο εντελώς αντίθετων πόλων Συμβολίζει την
-ισορροπία μεταξύ της τελειότητας και της ατέλειας- αυτή τη νοητή γραμμή που
-οριοθετεί την έννοια της φυσικής αρμονίας, ορίζει το αρτιότατο αποτέλεσμα μιας
-κατάστασης και συνθέτει την ισορροπία. Όλοι ψάχνουν και προσπαθούν να
-εφαρμόσουν την ισορροπία στην ζωή τους με οποιονδήποτε τρόπο μοιάζει πιο
-συμβατός για αυτούς. Ακόμα και αν μερικές φορές η ισορροπία μοιάζει αδύνατη, οι
-πράξεις μας και οι επιλογές μας αποκαλύπτουν το προσωπικό μας ταξίδι προς το δικό
-μας Happy Medium.`,
+    description: `φ = 1.61803... Αριθμοί που φαίνονται άγνωστοι εκ πρώτης όψεως, μια έννοια που μοιάζει περίεργη πέρα από τις σελίδες των μαθηματικών βιβλίων, αριθμοί που χάνουν το νόημα τους μέσα στο πλήθος των πληροφοριών που βυθιζόμαστε καθημερινά. Παρόλα αυτά , ο αριθμός φ συμβολίζει το Happy Medium, μια έννοια που μπορεί να μοιάζει μόνο μαθηματική, αλλά είναι πολλά παραπάνω. Μπορούμε να βρούμε την έννοια του φ στις τέχνες, στη φύση, στην αρχιτεκτονική, στα ανθρώπινα σώματα και στα ανθρώπινα χαρακτηριστικά. Το Happy Medium αντανακλά την τελειότητα, τη σταθερότητα, το ιδανικό σημείο μεταξύ δύο εντελώς αντίθετων πόλων Συμβολίζει την ισορροπία μεταξύ της τελειότητας και της ατέλειας- αυτή τη νοητή γραμμή που οριοθετεί την έννοια της φυσικής αρμονίας, ορίζει το βέλτιστο αποτέλεσμα μιας κατάστασης και συνθέτει την ισορροπία. Όλοι ψάχνουν και προσπαθούν να εφαρμόσουν την ισορροπία στην ζωή τους με οποιονδήποτε τρόπο μοιάζει πιο συμβατός για αυτούς. Ακόμα και αν μερικές φορές η ισορροπία μοιάζει αδύνατη, οι πράξεις μας και οι επιλογές μας αποκαλύπτουν το προσωπικό μας ταξίδι προς το δικό μας Happy Medium.`,
     introVideo: "",
     logo: "/images/history/2022.jpg",
     speakers: [
@@ -469,10 +482,12 @@ Different and at the same time unique for everyone, the incentive determines you
   {
     year: 2025,
     title: "Luminescence",
-    description: `Η θεματική «Luminescence» ενέπνευσε ένα πλούσιο πρόγραμμα ομιλιών και δράσεων.
-Διακεκριμένοι ομιλητές από το χώρο των επιστημών, των τεχνών, της κοινωνίας και της
-επιχειρηματικότητας μοιράστηκαν ιστορίες που αναδεικνύουν τη δύναμη της πρόκλησης, της
-μεταμόρφωσης και της συλλογικότητας.`,
+    description: `Ποιος είπε ότι χρειάζεται ήλιος για να υπάρξει φως;
+
+Η φωταύγεια υπάρχει γύρω μας. Από τις τσούχτρες στους σκοτεινούς βυθούς , μέχρι τις πυγολαμπίδες που φωτίζουν μόνες τους τη νύχτα. Αλλά δεν είναι μόνο η φύση που εκπέμπει φως. Είναι και αυτοί οι άνθρωποι, που με την έμπνευση, τη δύναμη και την αισιοδοξία του,, φωτίζουν τον δρόμο.
+
+Επιστημονικά, η φωταύγεια είναι η εκπομπή φωτός χωρίς την ανάγκη αύξησης της θερμοκρασίας. Στις ζωές μας όμως, η φωταύγεια αναφέρεται σε όλους εκείνους τους ανθρώπους και τις στιγμές που ξεχωρίζουν, φωτίζουν το περιβάλλον τους ή φέρνουν θετική ενέργεια και έμπνευση με έναν φυσικό, αβίαστο τρόπο.
+`,
     introVideo: "",
     logo: "/images/history/2025.jpg",
     sponsors: "/images/Sponsors2025.jpg",
