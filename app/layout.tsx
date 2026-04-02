@@ -22,6 +22,14 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "TEDxPanteion University",
   description: "Η επίσημη ιστοσελίδα του TEDxPanteion University.",
+  openGraph: {
+    // 3. Αυτό λέει στην Google τι να γράψει στο μικρό όνομα ΠΑΝΩ από το URL (Site Name)
+    siteName: "TEDxPanteion University", 
+    title: "TEDxPanteion University",
+    description: "Η επίσημη ιστοσελίδα του TEDxPanteion University.",
+    url: "https://tedxpanteionuniversity.com",
+    type: "website",
+  },
   viewport: "width=device-width, initial-scale=1",
 };
 
