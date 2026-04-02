@@ -25,7 +25,7 @@ export default function Footer() {
         {/* Center Text */}
         <div className="md:flex-1 flex justify-center">
         <p className="text-xs text-gray-400 text-center md:absolute left-1/2 transform md:-translate-x-1/2 lg:my-30">
-          ALL RIGHTS RESERVED © 2025
+          ALL RIGHTS RESERVED © 2026
         </p>
         </div>
 

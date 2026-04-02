@@ -7,7 +7,6 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Cursor from "@/components/ui/Cursor";
-import ParticlesBackground from "@/components/ui/ParticlesBackground";
 import ScrollToTop from "@/utils/scrollToTop";
 
 const geistSans = Geist({
@@ -21,8 +20,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TEDxPanteionUniversity",
-  description: "TEDxPU 2026 website",
+  title: "TEDxPanteion University",
+  description: "Η επίσημη ιστοσελίδα του TEDxPanteion University.",
   viewport: "width=device-width, initial-scale=1",
 };
 
