@@ -48,20 +48,12 @@ export default function HeroSection() {
           </div>
         </h1>
         <h2 className="text-3xl text-gray-300 mb-4 leading-tight">
-          Γιορτάζουμε 10 χρόνια TEDxPanteionUniversity.
+          Γιορτάζουμε 10 χρόνια TEDxPanteion University.
         </h2>
         <h2 className="text-lg md:text-xl text-gray-300 mb-8">
           Μια δεκαετία γεμάτη ιδέες, έμπνευση, δημιουργία και ανθρώπους που τόλμησαν να μοιραστούν το 
           όραμά τους.
         </h2>
-        <div className="flex justify-center">
-          <a
-            href="/event"
-            className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-full font-semibold text-lg transition-all duration-300"
-          >
-            Join the Event
-          </a>
-        </div>
       </motion.div>
     </section>
   );

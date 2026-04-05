@@ -1,7 +1,7 @@
 /* Footer Component */
 
 "use client";
-import { FaFacebookF, FaInstagram, FaTiktok, FaSpotify, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTiktok, FaSpotify, FaTwitter, FaYoutube, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 
 export default function Footer() {
@@ -46,6 +46,9 @@ export default function Footer() {
           </a>
           <a href="https://www.youtube.com/@tedxpanteionuniversity9799" aria-label="YouTube" target="_blank" className="hover:text-red-500">
             <FaYoutube />
+          </a>
+          <a href="https://www.linkedin.com/company/tedxpanteionuni/" aria-label="Linkedin" target="_blank" className="hover:text-red-500">
+            <FaLinkedin />
           </a>
         </div>
       </div>
