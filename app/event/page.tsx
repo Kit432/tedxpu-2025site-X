@@ -2,6 +2,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function MissionPage() {
   return (
@@ -57,13 +58,15 @@ export default function MissionPage() {
         </motion.section>
 
       <div className="grid md:grid-cols-2 gap-8">
-        <img
-          src="/images/venue.png"
-          className="w-full h-80 object-cover rounded-lg shadow-lg"
-          alt="TEDx Venue"
-          width = {300}
-          height = {80}
-        />
+        <div className="relative w-full h-80">
+          <Image
+            src="/images/venue.png"
+            className="object-cover rounded-lg shadow-lg"
+            alt="TEDx Venue"
+            fill
+            sizes="(max-width: 768px) calc(100vw - 48px), 50vw"
+          />
+        </div>
 
         <iframe
           className="w-full h-80 rounded-lg shadow-lg"

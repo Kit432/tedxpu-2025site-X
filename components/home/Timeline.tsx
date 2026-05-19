@@ -59,6 +59,7 @@ export default function Timeline({ events = Events }: { events?: EventType[] }) 
                   alt={ev.title}
                   fill
                   className="object-cover opacity-40 group-hover:scale-110 transition-all duration-500"
+                  sizes="(max-width: 640px) calc(100vw - 48px), (max-width: 1024px) calc(50vw - 54px), 600px"
                 />
               </div>
 

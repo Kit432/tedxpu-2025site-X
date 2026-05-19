@@ -2,6 +2,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function TeamPage() {
   return (
@@ -23,8 +24,8 @@ export default function TeamPage() {
           <div className="max-w-3xl mx-auto bg-black/40 backdrop-blur-lg border border-white/10 rounded-2xl p-8 shadow-xl">
         
             {/* Logo */}
-            <div className="w-40 h-40 mx-auto mb-4">
-              <img src={"/images/team/marketing.png"} alt={"Marketing & Communications"} className="w-full h-full object-contain" />
+            <div className="relative w-40 h-40 mx-auto mb-4">
+              <Image src="/images/team/marketing.png" alt="Marketing & Communications" fill sizes="160px" className="object-contain" />
             </div>
 
             {/* Description */}
@@ -45,8 +46,8 @@ export default function TeamPage() {
           <div className="max-w-3xl mx-auto bg-black/40 backdrop-blur-lg border border-white/10 rounded-2xl p-8 shadow-xl">
         
             {/* Logo */}
-            <div className="w-40 h-40 mx-auto mb-4">
-              <img src={"/images/team/graphics.png"} alt={"Graphics & Design"} className="w-full h-full object-contain" />
+            <div className="relative w-40 h-40 mx-auto mb-4">
+              <Image src="/images/team/graphics.png" alt="Graphics & Design" fill sizes="160px" className="object-contain" />
             </div>
 
             {/* Description */}
@@ -65,8 +66,8 @@ export default function TeamPage() {
           <div className="max-w-3xl mx-auto bg-black/40 backdrop-blur-lg border border-white/10 rounded-2xl p-8 shadow-xl">
         
             {/* Logo */}
-            <div className="w-40 h-40 mx-auto mb-4">
-              <img src={"/images/team/speakers.png"} alt={"Speakers"} className="w-full h-full object-contain" />
+            <div className="relative w-40 h-40 mx-auto mb-4">
+              <Image src="/images/team/speakers.png" alt="Speakers" fill sizes="160px" className="object-contain" />
             </div>
 
             {/* Description */}
@@ -88,8 +89,8 @@ export default function TeamPage() {
           <div className="max-w-3xl mx-auto bg-black/40 backdrop-blur-lg border border-white/10 rounded-2xl p-8 shadow-xl">
         
             {/* Logo */}
-            <div className="w-40 h-40 mx-auto mb-4">
-              <img src={"/images/team/sponsors.png"} alt={"Sponsorships & Finance"} className="w-full h-full object-contain" />
+            <div className="relative w-40 h-40 mx-auto mb-4">
+              <Image src="/images/team/sponsors.png" alt="Sponsorships & Finance" fill sizes="160px" className="object-contain" />
             </div>
 
             {/* Description */}
@@ -109,8 +110,8 @@ export default function TeamPage() {
           <div className="max-w-3xl mx-auto bg-black/40 backdrop-blur-lg border border-white/10 rounded-2xl p-8 shadow-xl">
         
             {/* Logo */}
-            <div className="w-40 h-40 mx-auto mb-4">
-              <img src={"/images/team/experience.png"} alt={"Experience"} className="w-full h-full object-contain" />
+            <div className="relative w-40 h-40 mx-auto mb-4">
+              <Image src="/images/team/experience.png" alt="Experience" fill sizes="160px" className="object-contain" />
             </div>
 
             {/* Description */}

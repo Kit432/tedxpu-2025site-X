@@ -27,6 +27,7 @@ export default function Header() {
             width={200}
             height={50}
             className="cursor-pointer lg:scale-120"
+            style={{ width: "auto", height: "auto" }}
           />
           </Link>
         </div>

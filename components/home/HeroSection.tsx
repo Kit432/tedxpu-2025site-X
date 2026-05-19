@@ -42,6 +42,7 @@ export default function HeroSection() {
                       alt="TEDx Logo"
                       width={500}
                       height={100}
+                      style={{ width: "auto", height: "auto" }}
                     />
           
                  

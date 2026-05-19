@@ -15,6 +15,7 @@ export default function Footer() {
             alt="TEDx Logo"
             width={200}
             height={50}
+            style={{ width: "auto", height: "auto" }}
           />
 
         <p className="px-2 text-gray-300">
@@ -32,22 +33,22 @@ export default function Footer() {
         {/* Social Icons */}
         <div className="flex space-x-5 text-xl lg:py-12">
           {/* Replace # with your actual social links */}
-          <a href="https://web.facebook.com/TEDxPANTEIONUNIVERSITY/?_rdc=1&_rdr#" aria-label="Facebook" target="_blank" className="hover:text-red-500">
+          <a href="https://web.facebook.com/TEDxPANTEIONUNIVERSITY/?_rdc=1&_rdr#" aria-label="Facebook" target="_blank" rel="noopener noreferrer" className="hover:text-red-500">
             <FaFacebookF />
           </a>
-          <a href="https://www.instagram.com/tedxpanteionuniversity/?hl=en" aria-label="Instagram" target="_blank" className="hover:text-red-500">
+          <a href="https://www.instagram.com/tedxpanteionuniversity/?hl=en" aria-label="Instagram" target="_blank" rel="noopener noreferrer" className="hover:text-red-500">
             <FaInstagram />
           </a>
-          <a href="https://www.tiktok.com/@tedxpanteionuniversity" aria-label="TikTok" target="_blank" className="hover:text-red-500">
+          <a href="https://www.tiktok.com/@tedxpanteionuniversity" aria-label="TikTok" target="_blank" rel="noopener noreferrer" className="hover:text-red-500">
             <FaTiktok />
           </a>
-          <a href="https://open.spotify.com/show/5qEUo7uwYL829pcyCwjCsO?si=y-PD73rZSAeb3yT2jyHiwA&dl_branch=1&nd=1&dlsi=35612f59725843dd" aria-label="Spotify" target="_blank" className="hover:text-red-500">
+          <a href="https://open.spotify.com/show/5qEUo7uwYL829pcyCwjCsO?si=y-PD73rZSAeb3yT2jyHiwA&dl_branch=1&nd=1&dlsi=35612f59725843dd" aria-label="Spotify" target="_blank" rel="noopener noreferrer" className="hover:text-red-500">
             <FaSpotify />
           </a>
-          <a href="https://www.youtube.com/@tedxpanteionuniversity9799" aria-label="YouTube" target="_blank" className="hover:text-red-500">
+          <a href="https://www.youtube.com/@tedxpanteionuniversity9799" aria-label="YouTube" target="_blank" rel="noopener noreferrer" className="hover:text-red-500">
             <FaYoutube />
           </a>
-          <a href="https://www.linkedin.com/company/tedxpanteionuni/" aria-label="Linkedin" target="_blank" className="hover:text-red-500">
+          <a href="https://www.linkedin.com/company/tedxpanteionuni/" aria-label="Linkedin" target="_blank" rel="noopener noreferrer" className="hover:text-red-500">
             <FaLinkedin />
           </a>
         </div>

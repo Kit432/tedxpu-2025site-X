@@ -23,7 +23,6 @@ export const metadata: Metadata = {
   title: "TEDxPanteion University",
   description: "Η επίσημη ιστοσελίδα του TEDxPanteion University.",
   openGraph: {
-    // 3. Αυτό λέει στην Google τι να γράψει στο μικρό όνομα ΠΑΝΩ από το URL (Site Name)
     siteName: "TEDxPanteion University", 
     title: "TEDxPanteion University",
     description: "Η επίσημη ιστοσελίδα του TEDxPanteion University.",
@@ -39,8 +38,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
+    <html lang="en" suppressHydrationWarning>
+      <body suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} antialiased absolute inset-0 z-1 pt-24`}>
           <ScrollToTop />
           <div className="hidden lg:block">

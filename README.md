@@ -1,53 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TEDxPanteion University X Site
+
+This repository contains the TEDxPanteion University X website made by Λιν Χονγκ Τσε (Κιτ) (Github: https://github.com/Kit432), now kept as an archived event site. The site presents the anniversary event, TEDxPanteion University information, team sections, event history, sponsors assets, and public social links.
+
+## Tech Stack
+
+- Next.js App Router
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Netlify hosting with `@netlify/plugin-nextjs`
+
+The project also includes visual/interactive dependencies such as Three.js, React Three Fiber, and tsparticles for richer frontend effects.
+
+## Site Pages
+
+- `/` - homepage with the TEDxPanteion University X hero and timeline.
+- `/event` - event information, venue image, and map embed.
+- `/about` - TEDx and TEDxPanteion University information.
+- `/about/team` - team category sections.
+- `/about/history` - previous event history, logos, speaker links, and video embeds.
+
+## Project Structure
+
+- `app/` - Next.js routes, layout, and global styles.
+- `components/` - reusable layout, home, about, and UI components.
+- `data/` - event history data and external talk links.
+- `public/` - images, logos, team assets, history assets, and sound files.
+- `utils/` - small shared helpers and hooks.
+- `netlify.toml` - Netlify build and security header configuration.
+
+## Security Hardening
+
+The Netlify deployment sends conservative browser security headers for every route:
+
+- `X-Content-Type-Options: nosniff`
+- `Referrer-Policy: strict-origin-when-cross-origin`
+- `Permissions-Policy: camera=(), microphone=(), geolocation=()`
+
+External links that open in a new tab use `rel="noopener noreferrer"` to prevent the opened page from getting access to the original window.
+
+A full Content Security Policy is intentionally not enabled yet. The site uses Next.js runtime assets plus YouTube and Google Maps embeds, so CSP should be tested separately before deployment to avoid breaking the archive.
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run dev
+npm run build
+npm run start
+npm run lint
+```
 
-## Learn More
+## Build Notes
 
-To learn more about Next.js, take a look at the following resources:
+Create a production build:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project uses `next/font` with Google-hosted Geist fonts, so local builds need network access to Google Fonts.
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Netlify builds the app with:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build
+```
 
-## Learning
-
-Next.js is a React framework that adds powerful backend features on top of React
-
-React is a frontend javascript library for building UI components
-
-React JS vs TS
-| Feature         | **React + JS**             | **React + TS**                             |
-| --------------- | -------------------------- | ------------------------------------------ |
-| Syntax          | Plain JavaScript           | JavaScript + Type Annotations              |
-| Type Checking   | None (runtime errors only) | Compile-time safety                        |
-| File Extensions | `.js`, `.jsx`              | `.ts`, `.tsx`                              |
-| Error Detection | After running              | Before running                             |
-| IDE Support     | Basic                      | Excellent                                  |
-| Learning Curve  | Easier                     | Slightly harder                            |
-| Best for        | Small/simple apps          | Medium to large apps, production codebases |
+The production output is published from `.next` as configured in `netlify.toml`.

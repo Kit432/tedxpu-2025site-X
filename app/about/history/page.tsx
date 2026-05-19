@@ -120,6 +120,7 @@ function HistoryContent() {
                             <a
                               href={sp.url}
                               target="_blank"
+                              rel="noopener noreferrer"
                               className="hover:text-red-400 underline"
                             >
                               {sp.title} — {sp.name}
@@ -135,10 +136,13 @@ function HistoryContent() {
                         <h3 className="text-xl font-semibold mb-2 text-red-500">Sponsors</h3>
                       )}
                       {event.sponsors && event.sponsors.trim() !== "" && (
-                        <img
+                        <Image
                           src={event.sponsors}
                           alt={`${event.title} logo`}
+                          width={1000}
+                          height={500}
                           className="w-full h-auto object-contain rounded-lg"
+                          sizes="(max-width: 768px) calc(100vw - 48px), 800px"
                         />
                       )}
                     </div>
